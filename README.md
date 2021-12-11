@@ -1,5 +1,6 @@
-# Pusher Chatty app! 
+# Chatty 
 
+Chatty is an one-to-one private chat client, with a front end of Vue.js and Bootstrap as well as a back-end of Flask (Python framework) and SQLite. The chatting/real-time events are handled through the Pusher API.
 I based my version on these tutorials:
 
  - [Part one](https://pusher.com/tutorials/chat-flask-vue-part-1)
