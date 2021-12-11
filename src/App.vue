@@ -85,7 +85,7 @@ export default {
       });
       
       // Get all the users from the server
-      const users = await this.axios.get("/api/users", {
+      const users = await this.axios.get("https://chatty-api-python.herokuapp.com/api/users", {
         headers: { Authorization: "Bearer " + this.token }
       });
       
@@ -161,7 +161,7 @@ export default {
       
       this.axios
         .post(
-          "/api/request_chat",
+          "https://chatty-api-python.herokuapp.com/api/request_chat",
           {
             from_user: this.logged_user_id,
             to_user: this.active_chat_id
@@ -215,7 +215,7 @@ export default {
       this.axios
       
       .post(
-        "/api/send_message",
+        "https://chatty-api-python.herokuapp.com/api/send_message",
         {
           from_user: this.logged_user_id,
           to_user: this.active_chat_id,

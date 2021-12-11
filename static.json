@@ -3,28 +3,5 @@
     "clean_urls": true,
     "routes": {
         "/**": "index.html"
-    },
-    "proxies": {
-        "/api": {
-          "origin": "https://chatty-api-python.herokuapp.com/"
-        },
-        "/api/register": {
-          "origin": "https://chatty-api-python.herokuapp.com/api/register"
-        },
-        "/api/login": {
-          "origin": "https://chatty-api-python.herokuapp.com/api/login"
-        },
-        "/api/request_chat": {
-          "origin": "https://chatty-api-python.herokuapp.com/request_chat"
-        },
-        "/api/pusher/auth": {
-          "origin": "https://chatty-api-python.herokuapp.com/pusher/auth"
-        },
-        "/api/send_message": {
-          "origin": "https://chatty-api-python.herokuapp.com/send_message"
-        },
-        "/api/users": {
-          "origin": "https://chatty-api-python.herokuapp.com/api/users"
-        }
     }
 }

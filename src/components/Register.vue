@@ -46,7 +46,7 @@ export default {
     register: function() {
       this.loading = true;
       this.axios
-        .post("/api/register", {
+        .post("https://chatty-api-python.herokuapp.com/api/register", {
           username: this.username,
           password: this.password
         })
@@ -64,7 +64,7 @@ export default {
           this.processing = false;
         });
     },
-    
+
     set_route: function() {
       this.$emit("register", false);
     },
@@ -72,7 +72,7 @@ export default {
     login: function() {
       this.loading = true;
       this.axios
-          .post("/api/login", {
+          .post("https://chatty-api-python.herokuapp.com/api/login", {
           username: this.username,
           password: this.password
           })
