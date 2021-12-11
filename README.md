@@ -1,4 +1,4 @@
-# Pusher chat app! 
+# Chatty 
 
 I based my version on these tutorials:
 
