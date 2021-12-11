@@ -46,7 +46,7 @@ export default {
     login: function() {
       this.processing = true;
       this.axios
-        .post("/api/login", {
+        .post("https://chatty-api-python.herokuapp.com/api/login", {
           username: this.username,
           password: this.password
         })
