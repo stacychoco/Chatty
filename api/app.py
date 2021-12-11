@@ -22,6 +22,11 @@ pusher = pusher.Pusher(
     ssl=True)
     
 
+@app.route('/')
+def index():
+    return "Hello, it works!"
+
+
 @app.route('/api/register', methods=["POST"])
 def register():
     data = request.get_json()
