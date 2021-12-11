@@ -1,2 +1,2 @@
 web: npm run serve
-web: cd api && flask run
+api: cd api && flask run
