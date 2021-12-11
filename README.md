@@ -1,4 +1,4 @@
-# Pusher chat app! 
+# Pusher Chatty app! 
 
 I based my version on these tutorials:
 
@@ -25,6 +25,18 @@ First, clone this repository to your local machine:
 ```sh
  $ git clone https://github.com/dongido001/pusher-chat-sentiment-analysis.git
 ```
+
+Then, create a Pusher account and update the following keys in the api/.env file with your correct Pusher keys:
+
+PUSHER_APP_ID=app_id
+PUSHER_KEY=key
+PUSHER_SECRET=secret
+PUSHER_CLUSTER=cluster
+
+Then, update the .env file in the project’s root folder with your correct Pusher App key:
+
+VUE_APP_PUSHER_KEY=<PUSHER_APP_KEY>
+VUE_APP_PUSHER_CLUSTER=<PUSHER_APP_CLUSTER>
 
 ### Running the Apps
 

@@ -227,6 +227,7 @@ export default {
 
       .then(_ => {
           this.scrollToEnd();
+          this.chat(this.active_chat_id)
       });
     },
 
@@ -251,18 +252,12 @@ input[type="text"], textarea, input[type="password"] {
 }
 
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
-
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgb(246, 246, 246);
-    border-radius: 10px;
-}
-
+/* Optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color:#cccccc;
-    -webkit-box-shadow: inset 0 0 6px rgba(153, 153, 153, 0.7);
+    background: #FF0000;
 }
 
 .messages-main {
@@ -308,7 +303,8 @@ input[type="text"], textarea, input[type="password"] {
 }
 
 * {
-  overflow: hidden;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
 </style>

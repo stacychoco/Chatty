@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template, redirect
+from flask import Flask, request, jsonify, render_template, redirect, Response
 from werkzeug.security import generate_password_hash, check_password_hash
 from database import db_session
 from models import User, Channel, Message
@@ -6,9 +6,11 @@ from flask_jwt_extended import JWTManager, jwt_required, create_access_token, ge
 from dotenv import load_dotenv
 import os
 import pusher
+from flask_cors import CORS
 
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 load_dotenv()
 jwt = JWTManager(app)
 app.config['JWT_SECRET_KEY'] = 'something-super-secret'  # Change this!
