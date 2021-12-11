@@ -50,13 +50,13 @@ VUE_APP_PUSHER_CLUSTER=<PUSHER_APP_CLUSTER>
 - Using your terminal, navigate into the Flask folder - `api`:
 
 ```
-    $ cd api
+  cd api
 ```
 
 - Create a virtual environment:
 
 ```
-python3 -m venv env
+  python3 -m venv env
 ```
 
 - Activate the virtual environment:
@@ -74,13 +74,13 @@ On windows? Activate it with the below:
 - Install the dependencies:
 
 ```
-pip install -r requirements.txt
+  pip install -r requirements.txt
 ```
 
 - Finally run the app:
 
 ```
- flask run
+  flask run
 ```
 
 #### Run the Vue app
@@ -90,13 +90,13 @@ Open a new terminal window, then navigate into the projects root folder - `one-t
 Install dependencies:
 
 ```
-npm install
+  npm install
 ```
 
 Then run the app:
 
 ```
-    $ npm run serve
+  npm run serve
 ```
 
 ## Built With
