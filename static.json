@@ -5,8 +5,26 @@
         "/**": "index.html"
     },
     "proxies": {
-        "/api/**": {
+        "/api/": {
           "origin": "https://chatty-api-python.herokuapp.com/"
+        },
+        "/api/register": {
+            "origin": "https://chatty-api-python.herokuapp.com/"
+        },
+        "/api/login": {
+        "origin": "https://chatty-api-python.herokuapp.com/"
+        },
+        "/api/request_chat": {
+            "origin": "https://chatty-api-python.herokuapp.com/"
+        },
+        "/api/pusher/auth": {
+            "origin": "https://chatty-api-python.herokuapp.com/"
+        },
+        "/api/send_message": {
+            "origin": "https://chatty-api-python.herokuapp.com/"
+        },
+        "/api/users": {
+            "origin": "https://chatty-api-python.herokuapp.com/"
         }
     }
 }

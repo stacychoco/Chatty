@@ -136,7 +136,7 @@ export default {
 
     getMessage: function(channel_name) {
       this.axios
-        .get(`/api/get_message/${channel_name}`, {
+        .get(`https://chatty-api-python.herokuapp.com/api/get_message/${channel_name}`, {
           headers: { Authorization: "Bearer " + this.token }
         })
         .then(response => {
