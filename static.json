@@ -4,9 +4,9 @@
     "routes": {
         "/**": "index.html"
     },
-    "redirects": {
-        "/api": {
-          "url": "${NEW_SITE_DOMAIN}/"
+    "proxies": {
+        "/api/": {
+          "origin": "https://chatty-api-python.herokuapp.com/"
         }
     }
 }
